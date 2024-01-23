@@ -1,7 +1,7 @@
 provider "aws"{
-    access_key = "AKIA2EBJKAORKAMUAWEL"
-    secret_key = "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"
-    region = "us-east-1"
+    access_key = "XXXX"
+    secret_key = "ASasdasfdaDFSASDADDFSASDSASSDAD"
+    region = "us-east-X"
 }
 
 # Look up existing IAM role 
@@ -22,9 +22,9 @@ resource "aws_instance" "EmployeeEC2" {
     #key_name = "EC2Key" #esto espara hacer SSH en la instancia SIEMPRE LOS VOY A  NECESITAR!
     iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
     subnet_id = "subnet-0ea879fcb25540b6e"
-    vpc_security_group_ids = ["sg-0c794e160ad916f60"] # [] por si quiero mas de un SG
+    vpc_security_group_ids = ["sg-0c794e160ad916f60"]
 
-     #user_data = templatefile("userdata.tpl", {}) #Bosstrap
+     user_data = templatefile("userdata.tpl", {}) #Bootstrap
 
     tags = {
       Name = "EmployeeEC2"
