@@ -24,7 +24,7 @@ resource "aws_instance" "EmployeeEC2" {
     subnet_id = "subnet-0ea879fcb25540b6e"
     vpc_security_group_ids = ["sg-0c794e160ad916f60"] # [] por si quiero mas de un SG
 
-     #user_data = templatefile("userdata.tpl", {}) #Bosstrap
+     user_data = templatefile("userdata.tpl", {}) #Bosstrap
 
     tags = {
       Name = "EmployeeEC2"
