@@ -1,11 +1,13 @@
 #!/bin/bash -ex
-wget https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/DEV-AWS-MO-GCNv2/FlaskApp.zip
-unzip FlaskApp.zip
-cd FlaskApp/
-yum -y install python3-pip
-pip install -r requirements.txt
-yum -y install stress
-export PHOTOS_BUCKET=employeee1515515151151
-export AWS_DEFAULT_REGION=us-west-2
-export DYNAMO_MODE=on
-FLASK_APP=application.py /usr/local/bin/flask run --host=0.0.0.0 --port=80
+# Update
+sudo apt-get update
+sudo apt-get install -y nginx git
+# Temp Clone
+sudo git clone https://github.com/JesterCloud/Web_App.git /tmp/web_app_clone
+# Delete HTML Nginx
+sudo rm /var/www/html/index.nginx-debian.html
+# Move fromRepo to var
+sudo mv /tmp/web_app_clone/Code_BaseHTMLCSS/* /var/www/html/
+sudo chown -R www-data:www-data /var/www/html
+sudo rm -rf /tmp/web_app_clone
+sudo systemctl restart nginx
