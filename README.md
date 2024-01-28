@@ -5,13 +5,23 @@ Web Server: Nginx, chosen for its high performance and efficiency.
 Scripting: Bash scripting is employed for automation and orchestration tasks, enhancing the deployment process.
 
 AWS: EC2, S3, multi AZ, Firewall, Cloudwatch, Cloudwatch Logs and many others AWS services to make the web available.
-    /$$$$$$ /$$      /$$
-   /$$__  $$| $$$    /$$$
-  | $$  \ $$| $$$$  /$$$$
-  | $$$$$$$$| $$ $$/$$ $$
-  | $$__  $$| $$  $$$| $$
-  | $$  | $$| $$\  $ | $$
-  | $$  | $$| $$ \/  | $$
-  |__/  |__/|__/     |__/
+/__ | 
+/
+/
+| \| 
+/
+/
+| $$$$$$$$| 
+/
 
+| __ | $$$|
+| 
+∣
+∣| \ $ | | 
+∣
+∣| 
+\/
+∣
+\/∣
+|/ |/|/ |/
 Previously create and S3 bucket with theimage 1, 2 and 3 upload
