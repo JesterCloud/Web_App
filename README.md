@@ -6,3 +6,6 @@
 **4.AWS integration:** Utilizes EC2, S3 (pre-load iamges), multi-AZ deployment, and AWS Firewall for a robust and scalable architecture.
                   **Monitoring:** Implements Cloudwatch and Cloudwatch Logs for real-time monitoring and logging.
                   **Automation:** Uses Terraform for infrastructure automation and Bash scripts for task orchestration.
+1. Primer elemento
+2. Segundo elemento
+3. Tercer elemento
