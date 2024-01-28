@@ -7,3 +7,5 @@
                   - **Monitoring:** Implements Cloudwatch and Cloudwatch Logs for real-time monitoring and logging.
                   - **Automation:** Uses Terraform for infrastructure automation and Bash scripts for task orchestration.
 
+[![LinkedIn](https://www.linkedin.com/in/giogalindo470/)](Tu-URL-de-LinkedIn)
+https://www.linkedin.com/in/giogalindo470/
