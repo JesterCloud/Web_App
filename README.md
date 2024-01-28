@@ -1,27 +1,9 @@
 **Basic Web App: An AWS-based Project Utilizing Linux, Bash, Nginx, and Terraform:**
 
-Operating System: LinuxCentOS7.
-Web Server: Nginx, chosen for its high performance and efficiency.
-Scripting: Bash scripting is employed for automation and orchestration tasks, enhancing the deployment process.
+**Operating System:** LinuxCentOS7.
+**Web Server:** Nginx, chosen for its high performance and efficiency.
+**Scripting:** Bash scripting is employed for automation and orchestration tasks, enhancing the deployment process.
 
-AWS: EC2, S3, multi AZ, Firewall, Cloudwatch, Cloudwatch Logs and many others AWS services to make the web available.
-/__ | 
-/
-/
-| \| 
-/
-/
-| $$$$$$$$| 
-/
-
-| __ | $$$|
-| 
-∣
-∣| \ $ | | 
-∣
-∣| 
-\/
-∣
-\/∣
-|/ |/|/ |/
-Previously create and S3 bucket with theimage 1, 2 and 3 upload
+**AWS integration:** Utilizes EC2, S3 (pre-load iamges), multi-AZ deployment, and AWS Firewall for a robust and scalable architecture.
+                  **Monitoring:** Implements Cloudwatch and Cloudwatch Logs for real-time monitoring and logging.
+                  **Automation:** Uses Terraform for infrastructure automation and Bash scripts for task orchestration.
