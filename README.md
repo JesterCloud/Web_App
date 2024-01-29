@@ -1,4 +1,4 @@
-# NGNIX Web Application on AWS using Terraform (IaS)
+# NGNIX on Linux server powered by AWS and Terraform (IaS)
 
 ## Technical Stack
 
