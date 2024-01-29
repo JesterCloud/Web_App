@@ -47,7 +47,7 @@ resource "aws_iam_group_policy_attachment" "example_Admin_policy" {
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
 
-# EC2 Role -------------------------------------------------------------EC2Full
+# EC2 Role ----------------------------------------------------------EC2Full
 
 resource "aws_iam_role" "ec2_full_role" {
   name = "EC2Full"

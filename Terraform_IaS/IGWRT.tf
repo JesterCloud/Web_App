@@ -1,4 +1,4 @@
-#IGW adjunto al VPC
+# IGW adjunto al VPC
 resource "aws_internet_gateway" "IGW" {
     vpc_id = aws_vpc.EmployeeVPC.id
 
@@ -7,7 +7,7 @@ resource "aws_internet_gateway" "IGW" {
     }
 }
 
-#RT primero crear el resource RT, para luego poner las rutas
+# Route Table
 resource "aws_route_table" "Main" {
     vpc_id = aws_vpc.EmployeeVPC.id
 
@@ -21,6 +21,7 @@ resource "aws_route_table" "Main" {
     }
 }
 
+# Route asssociation
 resource "aws_route_table_association" "PublicRTA" {
     subnet_id = aws_subnet.PublicA.id
     route_table_id = aws_route_table.Main.id

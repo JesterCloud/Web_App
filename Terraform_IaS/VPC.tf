@@ -1,4 +1,4 @@
-resource "aws_vpc" "EmployeeVPC" {
+resource "aws_vpc" "WebAppVPC" {
   cidr_block = "10.0.0.0/16"
 
   tags = {
@@ -8,7 +8,7 @@ resource "aws_vpc" "EmployeeVPC" {
 
 #Sunets A-------------------------------
 resource "aws_subnet" "PublicA" {
-  vpc_id = aws_vpc.EmployeeVPC.id
+  vpc_id = aws_vpc.WebAppVPC.id
   cidr_block = "10.0.1.0/24"
   availability_zone = "us-east-1a"
   map_public_ip_on_launch = true
@@ -19,7 +19,7 @@ resource "aws_subnet" "PublicA" {
 }
 
 resource "aws_subnet" "PrivateA" {
-  vpc_id = aws_vpc.EmployeeVPC.id
+  vpc_id = aws_vpc.WebAppVPC.id
   cidr_block = "10.0.2.0/24"
   availability_zone = "us-east-1a"
 
@@ -30,7 +30,7 @@ resource "aws_subnet" "PrivateA" {
 
 #Subnets B-------------------------------
 resource "aws_subnet" "PublicB" {
-  vpc_id = aws_vpc.EmployeeVPC.id
+  vpc_id = aws_vpc.WebAppVPC.id
   cidr_block = "10.0.3.0/24"
   availability_zone = "us-east-1b"
   map_public_ip_on_launch = true
@@ -41,7 +41,7 @@ resource "aws_subnet" "PublicB" {
 }
 
 resource "aws_subnet" "PrivateB" {
-  vpc_id = aws_vpc.EmployeeVPC.id
+  vpc_id = aws_vpc.WebAppVPC.id
   cidr_block = "10.0.4.0/24"
   availability_zone = "us-east-1b"
 
