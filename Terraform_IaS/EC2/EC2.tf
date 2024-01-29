@@ -16,10 +16,10 @@ resource "aws_iam_instance_profile" "ec2_profile" {
 }
 
 
-resource "aws_instance" "EmployeeEC2" {
+resource "aws_instance" "EC2App" {
     ami = "ami-0c7217cdde317cfec"
     instance_type = "t2.micro"
-    #key_name = "EC2Key" #esto espara hacer SSH en la instancia SIEMPRE LOS VOY A  NECESITAR!
+    #key_name = "EC2Key"  # If need
     iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
     subnet_id = "subnet-0ea879fcb25540b6e"
     vpc_security_group_ids = ["sg-0c794e160ad916f60"]
@@ -27,6 +27,6 @@ resource "aws_instance" "EmployeeEC2" {
      user_data = templatefile("userdata.tpl", {}) #Bootstrap
 
     tags = {
-      Name = "EmployeeEC2"
+      Name = "EC2App"
     }  
 }
