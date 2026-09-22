@@ -1,15 +1,15 @@
-# NGNIX on Linux server powered by AWS and Terraform (IaS)
+# Nginx on Linux server powered by AWS and Terraform (IaC)
 
 ## Technical Stack
 
 - **Operating System:** Linux CentOS 7.
 - **Web Server:** Nginx, selected for its high performance and efficiency in serving web content.
-- **Scripting:** Bash, shell scripting and EC2 bootstrap to download the HTML and CSS files form this git.
+- **Scripting:** Bash, shell scripting and EC2 bootstrap to download the HTML and CSS files from this git.
 - **AWS Integration:**
   - EC2 instances for core application hosting.
   - S3 for image storage and pre-loading before deployment.
   - Multi-AZ deployment strategy for high availability and failover capabilities.
-  - AutoScaling Groups to dynamically adjust resource.
+  - AutoScaling Groups to dynamically adjust resources.
   - App Load Balancing to distribute traffic.
   - AWS Firewall to safeguard infrastructure and data flow.
 - **Monitoring and Logging:**
